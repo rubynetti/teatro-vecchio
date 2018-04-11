@@ -3,22 +3,21 @@
   <h2 class="footer-heading">Contatti</h2>
 
   <ul class="contact-list">
-    <li><a href="http://alessandrodescovi.it">alessandrodescovi.it</a></li>
-    <li><a href="http://goofygoober.it">goofygoober.it</a></li>
-    <li><a href="http://venezia86.it">venezia86.it</a></li>
-  </ul>
 
-  <ul class="contact-list">
-    {%- if site.github_username -%}
-    <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+    {%- for path in site.external_links -%}
+      <li><a href="{{path[0]}}" target="_blank">{{path[1]}}</li>
+    {%- endfor -%}
+
+    {%- if site.email -%}
+      <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
     {%- endif -%}
 
     {%- if site.github_username -%}
-    <li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}">Github</a></li>
+      <li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" target="_blank">Github</a></li>
     {%- endif -%}
 
     {%- if site.twitter_username -%}
-    <li><a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}">Twitter</a></li>
+      <li><a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}" target="_blank">Twitter</a></li>
     {%- endif -%}
 
   </ul>
