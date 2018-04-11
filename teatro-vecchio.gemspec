@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-theme-teatro-vecchio"
+  spec.name          = "teatro-vecchio"
   spec.version       = "0.1.0"
   spec.authors       = ["Alessandro Descovi"]
   spec.email         = ["descovi@gmail.com"]
