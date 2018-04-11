@@ -5,7 +5,7 @@
   <ul class="contact-list">
 
     {%- for path in site.external_links -%}
-      <li><a href="{{path[0]}}" target="_blank">{{path[1]}}</li>
+      <li><a href="{{path[0]}}" target="_blank">{{ path[1] }}</a></li>
     {%- endfor -%}
 
     {%- if site.email -%}
