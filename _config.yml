@@ -1,0 +1,5 @@
+plugins:
+ - jekyll-seo-tag
+
+github_username: your_github_username
+twitter_username: your_twitter_username
