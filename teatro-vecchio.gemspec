@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Alessandro Descovi', 'Giacomo Bertoldi']
   spec.email         = ['descovi@gmail.com', 'bertoldi.giacomo@gmail.com']
 
-  spec.summary       = 'Theme for Jekyll - Dark theme similar to default atom'
+  spec.summary       = 'Theme for Jekyll - Dark theme similar to text editor enviroment.'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
