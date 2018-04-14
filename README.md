@@ -21,6 +21,13 @@ And add this line to your Jekyll site's `_config.yml`:
 theme: teatro-vecchio
 ```
 
+If you use github pages:
+
+```yaml
+remote_theme: rubynetti/teatro-vecchio
+theme: teatro-vecchio
+```
+
 And then execute:
 
     $ bundle
@@ -32,6 +39,10 @@ Or install it yourself as:
 ## Usage
 
 TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+
+## Plugins
+
+Teatro Vecchio comes with [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to make sure your website gets the most useful meta tags. See usage to know how to set it up.
 
 ## Contributing
 
@@ -49,4 +60,3 @@ To add a custom directory to your theme-gem, please edit the regexp in `teatro-v
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
