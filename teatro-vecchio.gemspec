@@ -3,8 +3,8 @@
 Gem::Specification.new do |spec|
   spec.name          = 'teatro-vecchio'
   spec.version       = '0.1.4'
-  spec.authors       = ['Alessandro Descovi']
-  spec.email         = ['descovi@gmail.com']
+  spec.authors       = ['Alessandro Descovi', 'Giacomo Bertoldi']
+  spec.email         = ['descovi@gmail.com', 'bertoldi.giacomo@gmail.com']
 
   spec.summary       = 'Theme for Jekyll - Dark theme similar to default atom'
   spec.license       = 'MIT'
