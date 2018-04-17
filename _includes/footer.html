@@ -1,6 +1,12 @@
 <footer class="site-footer">
 
-  <h2 class="footer-heading">Contatti</h2>
+  <h2 class="footer-heading">
+    {% if site.lang == "en" %}
+    Contacts
+    {% else %}
+    Contatti
+    {% endif %}
+  </h2>
 
   <ul class="contact-list">
 
