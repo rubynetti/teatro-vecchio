@@ -1,11 +1,11 @@
 ---
 layout: post
-title: This post demonstrates post content styles
+title: Questo post mostra esempi di stile estetico.
 categories: rails
 author: Alighieri Dante
 ---
 
-English Text!
+Testo in italiano!
 
 ## Some great heading (h2)
 

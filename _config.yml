@@ -11,5 +11,6 @@ external_links: [['http://venezia86.it', 'venezia86.it']]
 languages: ["en", "it"]
 exclude_from_localizations: ["javascript", "images", "css"]
 baseurl: ""
+permalink: /:title/
 
 # google_analytics_account: UA-GOOGLE-ANALITYCS-ID
