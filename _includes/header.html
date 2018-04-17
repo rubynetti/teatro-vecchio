@@ -1,3 +1,11 @@
 <header class="site-header">
 <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+<div style="float: right">
+{% if site.lang == "en" %}
+  <a class="link-it" href="{{ site.baseurl_root }}/it">Italiano</a>
+  {% elsif site.lang == "it"%}
+  <a class="link-en" href="{{ site.baseurl_root }}/">English</a>
+{% endif %}
+</div>
+
 </header>
