@@ -20,3 +20,5 @@ exclude:
   - Gemfile.lock
   - '*.gem'
   - '*.gemspec'
+  - LICENSE.txt
+  - README.md
