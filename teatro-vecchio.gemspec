@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'teatro-vecchio'
-  spec.version       = '0.2.0'
+  spec.version       = '0.2.1'
   spec.authors       = ['Alessandro Descovi', 'Giacomo Bertoldi']
   spec.email         = ['descovi@gmail.com', 'bertoldi.giacomo@gmail.com']
 
