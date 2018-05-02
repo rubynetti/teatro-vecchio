@@ -16,4 +16,6 @@ baseurl: ""
 permalink: /:title/
 url: "http://yoururl.com"
 
-# google_analytics_account: UA-GOOGLE-ANALITYCS-ID
+exclude:
+  - Gemfile
+  - Gemfile.lock
