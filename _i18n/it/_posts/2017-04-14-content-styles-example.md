@@ -45,6 +45,12 @@ Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin con
 </html>
 ```
 
+### Support for long code
+
+```shell
+$ docker run --rm -it -v /path-to-my-awesome-app:/app my-awesome-app bash
+```
+
 
 In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
 
@@ -75,7 +81,6 @@ In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla e
 2. Second item, dawg
 3. Third item, what what?!
 4. Fourth item, fo sheezy my neezy
-
 
 
 ## Headings are cool! (h2)
