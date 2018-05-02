@@ -11,7 +11,6 @@ twitter_username: your_twitter_username
 external_links: [['http://venezia86.it', 'venezia86.it']]
 languages: ["en", "it"]
 exclude_from_localizations: ["javascript", "images", "css"]
-exclude: '*.gem'
 baseurl: ""
 permalink: /:title/
 url: "http://yoururl.com"
@@ -19,3 +18,5 @@ url: "http://yoururl.com"
 exclude:
   - Gemfile
   - Gemfile.lock
+  - '*.gem'
+  - '*.gemspec'
