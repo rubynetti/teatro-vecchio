@@ -1,6 +1,7 @@
 plugins:
  - jekyll-seo-tag
  - jekyll-multiple-languages-plugin
+ - jekyll-sitemap
 
 title: Teatro Vecchio
 description: >
@@ -10,7 +11,9 @@ twitter_username: your_twitter_username
 external_links: [['http://venezia86.it', 'venezia86.it']]
 languages: ["en", "it"]
 exclude_from_localizations: ["javascript", "images", "css"]
+exclude: '*.gem'
 baseurl: ""
 permalink: /:title/
+url: "http://yoururl.com"
 
 # google_analytics_account: UA-GOOGLE-ANALITYCS-ID
