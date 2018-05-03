@@ -1,4 +1,5 @@
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" async="async">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,44 +9,53 @@
   <style>
 
     body{
-      font-family: "Helvetica";
+      font-family: 'Inconsolata', monospace;
       font-size: 100%;
       max-width: 75%;
       margin: 0 auto;
       padding-top: 20px;
-      background-color: #002b36;
-      color: #93a1a1;
+      background-color: #282c34;
+      color: #abb2bf;
       line-height: 1.375
     }
+
     blockquote, time {
-      font-family: "menlo", consolas, monospace;
+      font-family: monospace;
     }
     pre {
-      background-color: #000;
+      background-color: #111;
       color: #ccc;
       padding: 20px;
       border-radius: 6px;
       overflow-x: auto;
     }
 
-    h1, h2, h3, h4 {font-size: 100%}
-    h1 {color: #859900;}
-    h2 {color: #cb4b16;}
-    h3 {color: #b58900;}
-    h4 {color: #6c71c4;}
+    h1, h2, h3, h4, h5, h6 {font-size: 100%}
+    h1 {color: #b36ec8;}
+    h2 {color: #e06c75;}
+    h3 {color: #dfbb78;}
+    h4 {color: #98c379;}
+    h5 {color: #c1c3ca;}
 
-    a {
-      text-decoration: none
-    }
+    a {text-decoration: none;}
+    a {color: #52a9b5;}
+    a:hover {color: #427c86}
+
     .post-content a {text-decoration: underline}
-    a:hover {text-decoration: underline}
-    a, a:visited {color: #268bd2;}
-    hr{border: none;border-bottom: 1px solid #bbb}
+
+    hr{border: none;border-bottom: 1px solid #686f7b}
+
     .site-title {
       font-weight: bold;
       padding-bottom: 10px;
       display: inline-block;
-      color: #dc322f !important;
+      color: #dfbb78 !important;
+    }
+    .post-title{
+      color: #cb9663 !important;
+    }
+    .footer-heading {
+      color: #dfbb78 !important
     }
 
     strong {
