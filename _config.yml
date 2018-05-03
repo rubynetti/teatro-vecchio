@@ -1,7 +1,6 @@
 plugins:
  - jekyll-seo-tag
  - jekyll-multiple-languages-plugin
- - jekyll-sitemap
 
 title: Teatro Vecchio
 description: >
@@ -10,15 +9,10 @@ github_username: your_github_username
 twitter_username: your_twitter_username
 external_links: [['http://venezia86.it', 'venezia86.it']]
 languages: ["en", "it"]
-exclude_from_localizations: ["javascript", "images", "css"]
 baseurl: ""
 permalink: /:title/
 url: "http://yoururl.com"
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - '*.gem'
-  - '*.gemspec'
-  - LICENSE.txt
-  - README.md
+exclude: ["Gemfile", "Gemfile.lock", "*.gem", "*.gemspec", "LICENSE.txt", "README.md", "Dockerfile", "docker-compose.yml"]
+
+exclude_from_localizations: ["javascript", "images", "css", "robots.txt", "sitemap_index.xml", "robots.txt"]
