@@ -29,4 +29,3 @@ exclude_from_localizations:
   - css
   - robots.txt
   - sitemap_index.xml
-  - robots.txt
