@@ -2,7 +2,10 @@ version: '3'
 
 services:
   web:
-    build: .
+    build:
+      context: .
+      args:
+        - uid=$UID:-1000
     command: jekyll serve -H 0.0.0.0
     stop_signal: SIGINT
     volumes:
