@@ -13,6 +13,20 @@ baseurl: ""
 permalink: /:title/
 url: "http://yoururl.com"
 
-exclude: ["Gemfile", "Gemfile.lock", "*.gem", "*.gemspec", "LICENSE.txt", "README.md", "Dockerfile", "docker-compose.yml"]
+exclude:
+  - Gemfile
+  - Gemfile.lock"
+  - *.gem
+  - *.gemspec
+  - LICENSE.txt
+  - README.md
+  - Dockerfile
+  - docker-compose.yml
 
-exclude_from_localizations: ["javascript", "images", "css", "robots.txt", "sitemap_index.xml", "robots.txt"]
+exclude_from_localizations:
+  - javascript
+  - images
+  - css
+  - robots.txt
+  - sitemap_index.xml
+  - robots.txt
