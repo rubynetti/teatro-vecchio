@@ -1,6 +1,7 @@
 plugins:
  - jekyll-seo-tag
  - jekyll-multiple-languages-plugin
+ - jekyll-sitemap
 
 title: Teatro Vecchio
 description: >
@@ -11,7 +12,7 @@ external_links: [['http://venezia86.it', 'venezia86.it']]
 languages: ["en", "it"]
 baseurl: ""
 permalink: /:title/
-url: "http://yoururl.com"
+url: "http://your-url.com"
 
 exclude:
   - Gemfile
