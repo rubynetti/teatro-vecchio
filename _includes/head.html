@@ -18,7 +18,7 @@
       line-height: 1.375
     }
 
-    blockquote, time {
+    blockquote {
       font-family: monospace;
     }
     pre {
@@ -44,7 +44,7 @@
 
     hr{
       border: none;
-      border-bottom: 1px solid #686f7b
+      border-top: 1px solid #686f7b
     }
 
     .site-title {
@@ -60,6 +60,10 @@
       color: #dfbb78 !important
     }
 
+    .post-meta {
+      color: #c1c3ca;
+    }
+
     th { color: #c1c3ca;}
 
     strong {
@@ -68,6 +72,46 @@
     img {
       max-width: 100%
     }
+
+  /* gist */
+
+  /* Customizzazione di Ale */
+  /* colore bordo */
+  .gist-file { border: none !important;}
+  /* colore sfondo */
+  .gist-meta { background-color: #111 !important; color: #5c6370}
+  .gist-data {
+    border: none !important;
+    background-color: inherit !important;
+   }
+
+
+  /* Gist Embed - Dark Theme Styling - Thanks to MattD */
+
+  /* Body */
+  .gist-data tbody { background-color: #111; }
+  /* Line Numbers */
+  .gist-data tbody td:nth-of-type(1) { color: #52a9b5 !important;}
+  /* Code */
+  .gist-data tbody td:nth-of-type(2){ color: #ccc !important;}
+  /* Comments */
+  .pl-c { color: #98c379 !important; }
+  /* Function */
+  .pl-k, tbody tr:first-child .blob-code, tbody tr:last-child .blob-code{ color: #427c86 !important; }
+  /* Function Name */
+  .pl-en { color: #ccc !important; }
+  /* Function Method */
+  .pl-c1 { color: #ccc !important; }
+  /* "'s around Strings */
+  .pl-pds { color: #dfbb78 !important; }
+  /* Strings */
+  .pl-s { color: #dfbb78 !important; }
+  .pl-smi{ color: #ccc !important; }
+  /* Variables */
+  .pl-e { color: #b36ec8 !important}
+  /* Tags */
+  .pl-ent { color: #98c379 !important}
+
 
   </style>
 
