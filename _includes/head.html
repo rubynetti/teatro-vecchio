@@ -5,12 +5,26 @@
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" async="async">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" ></script>
+
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Inconsolata:400,700']
+      }, async:true
+    });
+  </script>
 
   <style>
 
+    .wf-active body{
+      font-family: 'Inconsolata'
+    }
+
     body{
-      font-family: 'Inconsolata', monospace;
+      font-family: monospace;
       font-size: 100%;
       max-width: 75%;
       margin: 0 auto;
@@ -21,7 +35,6 @@
     }
 
     blockquote {
-      font-family: monospace;
       color: #ccc;
     }
     code.highlighter-rouge{
