@@ -47,7 +47,7 @@ Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin con
 </html>
 ```
 
-And inline cpde ```looks just like this``` awesome
+And inline code ```looks just like this``` awesome.
 
 ### Support for long code
 
