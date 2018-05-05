@@ -4,6 +4,7 @@ plugins:
  - jekyll-sitemap
 
 title: Teatro Vecchio
+short_title: Teatro
 description: >
   Your description
 github_username: your_github_username
@@ -30,3 +31,4 @@ exclude_from_localizations:
   - css
   - robots.txt
   - sitemap_index.xml
+  - manifest.json

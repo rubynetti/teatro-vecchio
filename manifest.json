@@ -1,0 +1,7 @@
+---
+---
+{
+  "short_name": "{{ site.short_title }}",
+  "name":"{{ site.title }}",
+  "start_url": "{{site.url}}?utm_source=homescreen"
+}
