@@ -23,13 +23,6 @@ And add this line to your Jekyll site's `_config.yml`:
 theme: teatro-vecchio
 ```
 
-If you use github pages:
-
-```yaml
-remote_theme: rubynetti/teatro-vecchio
-theme: teatro-vecchio
-```
-
 And then execute:
 
     $ bundle
@@ -38,13 +31,12 @@ Or install it yourself as:
 
     $ gem install teatro-vecchio
 
-## Usage
-
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
 
 ## Plugins
 
-Teatro Vecchio comes with [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to make sure your website gets the most useful meta tags. See usage to know how to set it up.
+- [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag))
+- [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
+- [jekyll-multiple-languages-plugin - Rubynetti Fork!](https://github.com/rubynetti/jekyll-multiple-languages-plugin)
 
 ## Contributing
 
