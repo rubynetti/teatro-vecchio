@@ -32,3 +32,6 @@ exclude_from_localizations:
   - robots.txt
   - sitemap_index.xml
   - manifest.json
+
+docs:
+  - about.md

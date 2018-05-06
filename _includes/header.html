@@ -2,24 +2,25 @@
 <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 <div style="float: right">
 
-{% if site.lang == "en" %}
+  {% for doc in site.docs %}
+    <a href="{{site.baseurl}}{% link about.md %}">About</a>
+  {% endfor %}
 
-  {% if site.default_lang == "en" %}
-    <a class="link-it" href="{{ site.baseurl_root }}/it">It</a>
-  {% else %}
-    <a class="link-it" href="{{ site.baseurl_root }}/">It</a>
+  {% if site.lang == "en" %}
+    {% if site.default_lang == "en" %}
+      <a class="link-it" href="{{ site.baseurl_root }}/it">It</a>
+    {% else %}
+      <a class="link-it" href="{{ site.baseurl_root }}/">It</a>
+    {% endif %}
   {% endif %}
 
-{% endif %}
-
-{% if site.lang == "it"%}
-  {% if site.default_lang == "en" %}
-    <a class="link-en" href="{{ site.baseurl_root }}/">Eng</a>
-  {% else %}
-    <a class="link-en" href="{{ site.baseurl_root }}/en">Eng</a>
-
+  {% if site.lang == "it"%}
+    {% if site.default_lang == "en" %}
+      <a class="link-en" href="{{ site.baseurl_root }}/">Eng</a>
+    {% else %}
+      <a class="link-en" href="{{ site.baseurl_root }}/en">Eng</a>
+    {% endif %}
   {% endif %}
-{% endif %}
 
 </div>
 
