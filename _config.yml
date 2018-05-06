@@ -35,3 +35,4 @@ exclude_from_localizations:
 
 header_pages:
   - about.md
+  - conventions.md

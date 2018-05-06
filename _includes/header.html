@@ -7,25 +7,21 @@
   {%- if page_paths -%}
     {%- for path in page_paths -%}
       {%- assign my_page = site.pages | where: "path", path | first -%}
-      <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+      <a class="page-link" href="{{ my_page.url | relative_url }}" style="margin-right: 10px">{{ my_page.title | escape }}</a>
     {%- endfor -%}
   {%- endif -%}
 
-  {% if site.lang == "en" %}
-    {% if site.default_lang == "en" %}
-      <a class="link-it" href="{{ site.baseurl_root }}/it">It</a>
-    {% else %}
-      <a class="link-it" href="{{ site.baseurl_root }}/">It</a>
-    {% endif %}
-  {% endif %}
+  {%- if site.lang == "en" -%}
+    {%- if site.default_lang == "en" -%}<a class="link-it" href="{{ site.baseurl_root }}/it">It</a>
+    {%- else -%}<a class="link-it" href="{{ site.baseurl_root }}/">It</a>
+    {%- endif -%}
+  {%- endif -%}
 
-  {% if site.lang == "it"%}
-    {% if site.default_lang == "en" %}
-      <a class="link-en" href="{{ site.baseurl_root }}/">Eng</a>
-    {% else %}
-      <a class="link-en" href="{{ site.baseurl_root }}/en">Eng</a>
-    {% endif %}
-  {% endif %}
+  {%- if site.lang == "it" -%}
+    {%- if site.default_lang == "en" -%}<a class="link-en" href="{{ site.baseurl_root }}/">Eng</a>
+    {%- else -%}<a class="link-en" href="{{ site.baseurl_root }}/en">Eng</a>
+    {%- endif -%}
+  {%- endif -%}
 
 </div>
 
