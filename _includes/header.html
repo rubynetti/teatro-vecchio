@@ -11,7 +11,8 @@
     {%- endfor -%}
   {%- endif -%}
 
-  {%- if site.lang.size > 1 -%}
+  
+  {%- if site.languages.size > 1 -%}
 
     {%- if site.lang == "en" -%}
       {%- if site.default_lang == "en" -%}<a class="link-it" href="{{ site.baseurl_root }}/it">It</a>
