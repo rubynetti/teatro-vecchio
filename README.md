@@ -34,7 +34,7 @@ Or install it yourself as:
 
 ## Plugins
 
-- [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag))
+- [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
 - [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
 - [jekyll-multiple-languages-plugin - Rubynetti Fork!](https://github.com/rubynetti/jekyll-multiple-languages-plugin)
 
