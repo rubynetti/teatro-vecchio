@@ -33,5 +33,5 @@ exclude_from_localizations:
   - sitemap_index.xml
   - manifest.json
 
-docs:
+header_pages:
   - about.md
