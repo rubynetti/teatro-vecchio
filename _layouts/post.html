@@ -19,37 +19,37 @@ layout: default
 <h4 style="margin-top: 40px; margin-bottom: 20px;">{% t global.articles_related %}:</h4>
 <div class="correlati-list">
 <ul>
-{% assign maxRelated = 4 %}
-{% assign minCommonTags =  1 %}
-{% assign maxRelatedCounter = 0 %}
+{%- assign maxRelated = 4 -%}
+{%- assign minCommonTags =  1 -%}
+{%- assign maxRelatedCounter = 0 -%}
 
-{% for post in site.posts %}
+{%- for post in site.posts -%}
 
-    {% assign sameTagCount = 0 %}
-    {% assign commonTags = '' %}
+    {%- assign sameTagCount = 0 -%}
+    {%- assign commonTags = '' -%}
 
-    {% for category in post.categories %}
-      {% if post.url != page.url %}
-        {% if page.categories contains category %}
-          {% assign sameTagCount = sameTagCount | plus: 1 %}
-          {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
-          {% assign commonTags = commonTags | append: tagmarkup %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+    {%- for category in post.categories -%}
+      {%- if post.url != page.url -%}
+        {%- if page.categories contains category -%}
+          {%- assign sameTagCount = sameTagCount | plus: 1 -%}
+          {%- capture tagmarkup -%} <span class="label label-default">{{ category }}</span> {%- endcapture -%}
+          {%- assign commonTags = commonTags | append: tagmarkup -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
 
-    {% if sameTagCount >= minCommonTags %}
+    {%- if sameTagCount >= minCommonTags -%}
       <li>
         <a href="{{ site.baseurl }}{{ post.url }}">
           {{ post.title }}
         </a>
       </li>
-      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-      {% if maxRelatedCounter >= maxRelated %}
-        {% break %}
-      {% endif %}
-    {% endif %}
+      {%- assign maxRelatedCounter = maxRelatedCounter | plus: 1 -%}
+      {%- if maxRelatedCounter >= maxRelated -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endif -%}
 
-{% endfor %}
+{%- endfor -%}
 </ul>
 </div><!-- correlati-list -->
