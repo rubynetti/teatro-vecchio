@@ -38,9 +38,6 @@ Or install it yourself as:
 - [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
 - [jekyll-multiple-languages-plugin - Rubynetti Fork!](https://github.com/rubynetti/jekyll-multiple-languages-plugin)
 
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
@@ -55,5 +52,4 @@ To add a custom directory to your theme-gem, please edit the regexp in `teatro-v
 On macOS, add a _.env_ file in the root directory, with ```UID=501``` in it.
 
 ## License
-
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
