@@ -3,7 +3,7 @@
 <div style="float: right">
 
   {% for doc in site.docs %}
-    <a href="{{site.baseurl}}{% link about.md %}">About</a>
+    <a href="{{site.baseurl}}{% link about.md %}">{{doc}}About</a>
   {% endfor %}
 
   {% if site.lang == "en" %}
