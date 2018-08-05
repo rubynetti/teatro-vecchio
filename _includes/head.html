@@ -11,7 +11,7 @@
     {{page.description.length | inspect }}
   <meta
   name="description"
-  content="{% if page.description.length > 0 %}
+  content="{% if page.description != nil %}
            {{ page.description | inspect }}
            {% elsif page.excerpt %}
            {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}
