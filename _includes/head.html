@@ -6,7 +6,7 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta
   name="description"
-  content="{% if page.description.length > 0 %}
+  content="{% if post.description.length > 0 %}
            {{ description | inspect }}
            {% elsif page.excerpt %}
            {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}
