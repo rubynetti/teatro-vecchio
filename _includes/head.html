@@ -11,13 +11,13 @@
     {{page.description.length | inspect }}
   <meta
   name="description"
-  content="{% if page.description != nil %}
+  content="{%- if page.description != nil -%}
            {{ page.description | inspect }}
-           {% elsif page.excerpt %}
+           {%- elsif page.excerpt -%}
            {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}
-           {% else %}
+           {%- else -%}
            {{ site.description }}
-           {% endif %}
+           {%- endif -%}
            ">
   <link rel="manifest" href="/manifest.json">
 
