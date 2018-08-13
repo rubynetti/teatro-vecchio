@@ -3,8 +3,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{% if page.title %}{% t page.title %}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta
+  name="description"
+  content="{%- if page.description != nil -%}
+           {{ page.description }}
+           {%- elsif page.excerpt -%}
+           {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}
+           {%- else -%}
+           {{ site.description }}
+           {%- endif -%}
+           ">
   <link rel="manifest" href="/manifest.json">
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
